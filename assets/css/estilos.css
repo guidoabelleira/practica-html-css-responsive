@@ -1,0 +1,262 @@
+/* Config Globales */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+html {
+    background-color: #fff;
+    color: rgb(62,62,62);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* Encabezados */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 100%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(15, 90, 167);
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* nav */
+
+/* home-container */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-left: 90px;
+}
+
+.nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+    margin-right: 70px;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    transition: border-bottom 0.2s;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid rgb(15, 90, 167);
+}
+
+.home-container {
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 100px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    transform: translate(-50%, 50%);
+}
+
+.btn, 
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 2px solid rgb(15, 90, 167);
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    color: rgb(62,62,62);
+}
+
+.btn-more:hover {
+    background-color: rgb(15, 90, 167);
+    color:rgba(0, 0, 0, 0.705);
+}
+
+.btn-contact:hover, 
+input[type=submit]:hover {
+    background-color: rgb(15, 90, 167);
+}
+
+/* Section-Description */
+
+.text-center {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/* Section-Plans */
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-content {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+    text-align: center;
+}
+
+.plan-content div {
+    padding: 15px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.btn-ingresa {
+    color: black;
+}
+
+.btn-ingresa:hover {
+    color: white;
+    background-color: rgb(15, 90, 167);
+}
+
+.plan-price {
+    font-size: 300;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: rgb(15, 90, 167);
+}
+
+.plan-content ul {
+    list-style: none;
+}
+
+.plan-content ul li {
+    padding: 5px 0;
+}
+
+
+/* Section images */
+
+.projects-image {
+    list-style: none;
+    width: 100%;
+}
+
+.projects-image li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* Contact */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100%;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
